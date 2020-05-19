@@ -11,6 +11,19 @@
 <li>http://localhost:8081/logout</li>
 </ul>
 
+
+<p>The home page:</p>
+
+<img src="login.png"/>
+
+<p>The facebook login page after the execution of http://localhost:8081/secured:</p>
+
+<img src="facelogin.png"/>
+
+<p>The secured page:</p>
+
+<img src="securedPage.png"/>
+
 <p>The main dependencies:</p>
 
 
