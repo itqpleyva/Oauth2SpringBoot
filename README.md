@@ -24,7 +24,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-    
+  <p>Security configuration:</p>
+     
+     @Configuration
+     public class SecurityConfig extends WebSecurityConfigurerAdapter {
+     @Override
+     public void configure(HttpSecurity http) throws Exception {
+
+        http
+                .antMatcher("/**").authorizeRequests()
+                .antMatchers(new String[]{"/", "/user"}).permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .oauth2Login();
+        }
+     }
+
   <p>Application.properties file:</p>
   
     spring:
