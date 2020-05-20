@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+	<div class="row container-fluid">
+		<div class="card text-center col-4 mx-auto mt-5 p-0">
+		  <div class="card-header bg-dark text-white">
+		    <h3>SECURED</h3>
+		  </div>
+		  <div class="card-body">
+		    <h2 class="card-title">Welcome to Secured Page <span class="text-success" th:text="${user}"></span></h2>	
+			 <div class="mt-4">
+				<a class="btn btn-danger" href="/logout">logout</a>
+			 </div>
+		  </div>
+		</div>
+	</div>
+</body>
+</html>
